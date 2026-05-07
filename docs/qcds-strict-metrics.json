@@ -1,0 +1,46 @@
+{
+  "product": "video-asset-thumbnail-broll-shelf",
+  "generatedAt": "2026-05-07T23:23:23.576Z",
+  "definition": {
+    "Quality": "実装、テスト、security/privacy、traceability、release evidence の品質",
+    "Cost": "導入、運用、保守、追加検証に必要な負担",
+    "Delivery": "closed alpha として配布、検証、再実行できる状態",
+    "Satisfaction": "利用者が迷わず次アクションに進める UI/UX、docs、手順"
+  },
+  "scale": [
+    "S+",
+    "S-",
+    "A+",
+    "A-",
+    "B+",
+    "B-",
+    "C+",
+    "C-",
+    "D+",
+    "D-"
+  ],
+  "manualTestStatus": "手動テスト未実施",
+  "manualTestUpperBound": "S-",
+  "ratings": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-"
+  },
+  "minimumRequired": "A-",
+  "allRatingsAtLeastAMinus": true,
+  "includedEvidence": [
+    "implementation",
+    "developer documentation",
+    "user documentation",
+    "installation/onboarding",
+    "manual verification procedures",
+    "release readiness",
+    "security/privacy",
+    "maintainability",
+    "competitive differentiation",
+    "traceability",
+    "docs ZIP",
+    "release evidence"
+  ]
+}

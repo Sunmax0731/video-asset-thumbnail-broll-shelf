@@ -1,0 +1,118 @@
+{
+  "product": "video-asset-thumbnail-broll-shelf",
+  "generatedAt": "2026-05-08T00:00:00+09:00",
+  "scenarios": [
+    {
+      "id": "happy-path",
+      "title": "必須項目と証跡がそろった正常系",
+      "items": [
+        {
+          "id": "video-asset-thumbnail-broll-shelf-sample-ok-001",
+          "title": "映像素材リンク・サムネイル・Bロール棚 正常サンプル",
+          "owner": "review-owner",
+          "source": "samples/video-asset-thumbnail-broll-shelf/input-a.json",
+          "status": "ready",
+          "decision": "approved",
+          "evidence": [
+            "input-normalized",
+            "review-recorded",
+            "report-exported"
+          ],
+          "notes": "代表操作が最後まで完了する。",
+          "tags": [
+            "WindowsApp",
+            "closed-alpha"
+          ]
+        }
+      ],
+      "expectedSummary": {
+        "pass": 1,
+        "warn": 0,
+        "fail": 0
+      }
+    },
+    {
+      "id": "missing-required",
+      "title": "必須項目不足を失敗として返す",
+      "items": [
+        {
+          "id": "video-asset-thumbnail-broll-shelf-sample-missing-001",
+          "title": "",
+          "owner": "",
+          "source": "",
+          "status": "ready",
+          "decision": "approved",
+          "evidence": []
+        }
+      ],
+      "expectedSummary": {
+        "pass": 0,
+        "warn": 0,
+        "fail": 1
+      }
+    },
+    {
+      "id": "warning",
+      "title": "証跡不足または保留状態を警告として返す",
+      "items": [
+        {
+          "id": "video-asset-thumbnail-broll-shelf-sample-warn-001",
+          "title": "映像素材リンク・サムネイル・Bロール棚 警告サンプル",
+          "owner": "review-owner",
+          "source": "samples/video-asset-thumbnail-broll-shelf/input-warning.json",
+          "status": "pending",
+          "decision": "pending",
+          "evidence": [],
+          "notes": "人間確認または追加証跡が必要。"
+        }
+      ],
+      "expectedSummary": {
+        "pass": 0,
+        "warn": 1,
+        "fail": 0
+      }
+    },
+    {
+      "id": "mixed-batch",
+      "title": "正常、警告、失敗が混在するバッチ",
+      "items": [
+        {
+          "id": "video-asset-thumbnail-broll-shelf-sample-mix-ok",
+          "title": "承認済み項目",
+          "owner": "review-owner",
+          "source": "samples/video-asset-thumbnail-broll-shelf/mixed-ok.json",
+          "status": "ready",
+          "decision": "approved",
+          "evidence": [
+            "checked"
+          ]
+        },
+        {
+          "id": "video-asset-thumbnail-broll-shelf-sample-mix-warn",
+          "title": "追加確認項目",
+          "owner": "review-owner",
+          "source": "samples/video-asset-thumbnail-broll-shelf/mixed-warn.json",
+          "status": "needs-review",
+          "decision": "pending",
+          "evidence": []
+        },
+        {
+          "id": "video-asset-thumbnail-broll-shelf-sample-mix-fail",
+          "title": "所有者不足項目",
+          "owner": "",
+          "source": "samples/video-asset-thumbnail-broll-shelf/mixed-fail.json",
+          "status": "ready",
+          "decision": "approved",
+          "evidence": [
+            "checked"
+          ]
+        }
+      ],
+      "expectedSummary": {
+        "pass": 1,
+        "warn": 1,
+        "fail": 1
+      }
+    }
+  ]
+}

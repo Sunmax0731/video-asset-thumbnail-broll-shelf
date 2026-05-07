@@ -1,0 +1,33 @@
+{
+  "product": "video-asset-thumbnail-broll-shelf",
+  "baselineVersion": "v0.1.0-alpha.1",
+  "scenarios": {
+    "happy-path": {
+      "pass": 1,
+      "warn": 0,
+      "fail": 0
+    },
+    "missing-required": {
+      "pass": 0,
+      "warn": 0,
+      "fail": 1
+    },
+    "warning": {
+      "pass": 0,
+      "warn": 1,
+      "fail": 0
+    },
+    "mixed-batch": {
+      "pass": 1,
+      "warn": 1,
+      "fail": 1
+    }
+  },
+  "manualTestStatus": "手動テスト未実施",
+  "qcdsRatings": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-"
+  }
+}

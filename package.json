@@ -1,0 +1,18 @@
+{
+  "name": "video-asset-thumbnail-broll-shelf",
+  "version": "0.1.0-alpha.1",
+  "private": false,
+  "type": "module",
+  "description": "映像素材リンク・サムネイル・Bロール棚 closed alpha",
+  "scripts": {
+    "test": "node tests/product.test.mjs",
+    "validate": "node src/cli/index.js --input samples/representative-suite.json --output dist/video-asset-thumbnail-broll-shelf-representative-report.json",
+    "build": "node scripts/build-docs-zip.mjs"
+  },
+  "keywords": [
+    "WindowsApp",
+    "closed-alpha",
+    "qcds"
+  ],
+  "license": "MIT"
+}
