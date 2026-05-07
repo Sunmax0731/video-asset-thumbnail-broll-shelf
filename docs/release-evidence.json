@@ -1,22 +1,59 @@
 {
   "product": "video-asset-thumbnail-broll-shelf",
   "tag": "v0.1.0-alpha.1",
-  "status": "pre-release-pending",
+  "status": "released",
+  "updatedAt": "2026-05-07T23:23:36.677Z",
   "manualTestStatus": "手動テスト未実施",
   "automatedVerification": {
-    "npmTest": "pending",
-    "npmRunValidate": "pending",
-    "npmRunBuild": "pending"
+    "npmTest": "passed",
+    "npmRunValidate": "passed",
+    "npmRunBuild": "passed",
+    "firstPassOutput": {
+      "npmTest": "> video-asset-thumbnail-broll-shelf@0.1.0-alpha.1 test\n> node tests/product.test.mjs\n\n{\n  \"product\": \"video-asset-thumbnail-broll-shelf\",\n  \"scenarios\": 4,\n  \"summary\": {\n    \"pass\": 2,\n    \"warn\": 2,\n    \"fail\": 2\n  }\n}",
+      "npmRunValidate": "> video-asset-thumbnail-broll-shelf@0.1.0-alpha.1 validate\n> node src/cli/index.js --input samples/representative-suite.json --output dist/video-asset-thumbnail-broll-shelf-representative-report.json\n\n{\n  \"outputPath\": \"dist/video-asset-thumbnail-broll-shelf-representative-report.json\",\n  \"summary\": {\n    \"pass\": 2,\n    \"warn\": 2,\n    \"fail\": 2\n  },\n  \"scenarios\": 4\n}",
+      "npmRunBuild": "> video-asset-thumbnail-broll-shelf@0.1.0-alpha.1 build\n> node scripts/build-docs-zip.mjs\n\n{\n  \"zipPath\": \"D:\\\\AI\\\\WindowsApp\\\\video-asset-thumbnail-broll-shelf\\\\dist\\\\video-asset-thumbnail-broll-shelf-docs.zip\"\n}"
+    }
   },
   "github": {
     "repo": "https://github.com/Sunmax0731/video-asset-thumbnail-broll-shelf",
-    "releaseUrl": null,
-    "prerelease": null,
-    "latest": null,
-    "assetCount": 0
+    "releaseUrl": "https://github.com/Sunmax0731/video-asset-thumbnail-broll-shelf/releases/tag/v0.1.0-alpha.1",
+    "tagName": "v0.1.0-alpha.1",
+    "prerelease": true,
+    "latest": false,
+    "latestEndpoint": {
+      "latestEndpointStatus": "not-found-or-not-latest",
+      "latestTag": null,
+      "stderr": "gh: Not Found (HTTP 404)\n"
+    },
+    "assetCount": 3,
+    "assets": [
+      "manual-test.md",
+      "strict-manual-test-addendum.md",
+      "video-asset-thumbnail-broll-shelf-docs.zip"
+    ]
   },
   "git": {
-    "mainOriginClean": null,
-    "codexBranchesRemaining": null
+    "mainOriginCleanBeforeEvidenceCommit": {
+      "mainOriginClean": true,
+      "aheadBehind": {
+        "ahead": 0,
+        "behind": 0
+      },
+      "status": "",
+      "codexBranchesRemaining": [
+        "codex/closed-alpha-release"
+      ]
+    }
+  },
+  "assets": [
+    "dist/video-asset-thumbnail-broll-shelf-docs.zip",
+    "docs/manual-test.md",
+    "docs/strict-manual-test-addendum.md"
+  ],
+  "qcds": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-"
   }
 }
