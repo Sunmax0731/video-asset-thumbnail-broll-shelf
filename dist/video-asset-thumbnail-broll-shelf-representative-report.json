@@ -1,0 +1,202 @@
+{
+  "product": "video-asset-thumbnail-broll-shelf",
+  "qcds": {
+    "scale": [
+      "S+",
+      "S-",
+      "A+",
+      "A-",
+      "B+",
+      "B-",
+      "C+",
+      "C-",
+      "D+",
+      "D-"
+    ],
+    "manualTestStatus": "手動テスト未実施",
+    "manualTestUpperBound": "S-",
+    "ratings": {
+      "Quality": "S-",
+      "Cost": "S-",
+      "Delivery": "S-",
+      "Satisfaction": "S-"
+    }
+  },
+  "manualTestStatus": "手動テスト未実施",
+  "generatedAt": "2026-05-07T23:23:24.318Z",
+  "scenarios": [
+    {
+      "id": "happy-path",
+      "title": "必須項目と証跡がそろった正常系",
+      "summary": {
+        "pass": 1,
+        "warn": 0,
+        "fail": 0
+      },
+      "expectedSummary": {
+        "pass": 1,
+        "warn": 0,
+        "fail": 0
+      },
+      "matchedExpected": true,
+      "results": [
+        {
+          "id": "video-asset-thumbnail-broll-shelf-sample-ok-001",
+          "title": "映像素材リンク・サムネイル・Bロール棚 正常サンプル",
+          "status": "pass",
+          "nextAction": "closed alpha の代表条件を満たしています。",
+          "issues": []
+        }
+      ]
+    },
+    {
+      "id": "missing-required",
+      "title": "必須項目不足を失敗として返す",
+      "summary": {
+        "pass": 0,
+        "warn": 0,
+        "fail": 1
+      },
+      "expectedSummary": {
+        "pass": 0,
+        "warn": 0,
+        "fail": 1
+      },
+      "matchedExpected": true,
+      "results": [
+        {
+          "id": "video-asset-thumbnail-broll-shelf-sample-missing-001",
+          "title": "",
+          "status": "fail",
+          "nextAction": "必須項目を修正してから再実行してください。",
+          "issues": [
+            {
+              "level": "error",
+              "code": "missing-required",
+              "field": "title",
+              "message": "title is required."
+            },
+            {
+              "level": "error",
+              "code": "missing-required",
+              "field": "owner",
+              "message": "owner is required."
+            },
+            {
+              "level": "error",
+              "code": "missing-required",
+              "field": "source",
+              "message": "source is required."
+            },
+            {
+              "level": "warning",
+              "code": "missing-evidence",
+              "field": "evidence",
+              "message": "Evidence is recommended for closed alpha review."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "warning",
+      "title": "証跡不足または保留状態を警告として返す",
+      "summary": {
+        "pass": 0,
+        "warn": 1,
+        "fail": 0
+      },
+      "expectedSummary": {
+        "pass": 0,
+        "warn": 1,
+        "fail": 0
+      },
+      "matchedExpected": true,
+      "results": [
+        {
+          "id": "video-asset-thumbnail-broll-shelf-sample-warn-001",
+          "title": "映像素材リンク・サムネイル・Bロール棚 警告サンプル",
+          "status": "warn",
+          "nextAction": "手動確認または証跡追加後に承認してください。",
+          "issues": [
+            {
+              "level": "warning",
+              "code": "needs-human-review",
+              "field": "status",
+              "message": "Status pending requires human review."
+            },
+            {
+              "level": "warning",
+              "code": "missing-evidence",
+              "field": "evidence",
+              "message": "Evidence is recommended for closed alpha review."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mixed-batch",
+      "title": "正常、警告、失敗が混在するバッチ",
+      "summary": {
+        "pass": 1,
+        "warn": 1,
+        "fail": 1
+      },
+      "expectedSummary": {
+        "pass": 1,
+        "warn": 1,
+        "fail": 1
+      },
+      "matchedExpected": true,
+      "results": [
+        {
+          "id": "video-asset-thumbnail-broll-shelf-sample-mix-ok",
+          "title": "承認済み項目",
+          "status": "pass",
+          "nextAction": "closed alpha の代表条件を満たしています。",
+          "issues": []
+        },
+        {
+          "id": "video-asset-thumbnail-broll-shelf-sample-mix-warn",
+          "title": "追加確認項目",
+          "status": "warn",
+          "nextAction": "手動確認または証跡追加後に承認してください。",
+          "issues": [
+            {
+              "level": "warning",
+              "code": "needs-human-review",
+              "field": "status",
+              "message": "Status needs-review requires human review."
+            },
+            {
+              "level": "warning",
+              "code": "missing-evidence",
+              "field": "evidence",
+              "message": "Evidence is recommended for closed alpha review."
+            }
+          ]
+        },
+        {
+          "id": "video-asset-thumbnail-broll-shelf-sample-mix-fail",
+          "title": "所有者不足項目",
+          "status": "fail",
+          "nextAction": "必須項目を修正してから再実行してください。",
+          "issues": [
+            {
+              "level": "error",
+              "code": "missing-required",
+              "field": "owner",
+              "message": "owner is required."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "pass": 2,
+    "warn": 2,
+    "fail": 2
+  }
+}

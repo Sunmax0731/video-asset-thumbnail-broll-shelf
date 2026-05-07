@@ -1,0 +1,22 @@
+{
+  "product": "video-asset-thumbnail-broll-shelf",
+  "tag": "v0.1.0-alpha.1",
+  "status": "pre-release-pending",
+  "manualTestStatus": "手動テスト未実施",
+  "automatedVerification": {
+    "npmTest": "pending",
+    "npmRunValidate": "pending",
+    "npmRunBuild": "pending"
+  },
+  "github": {
+    "repo": "https://github.com/Sunmax0731/video-asset-thumbnail-broll-shelf",
+    "releaseUrl": null,
+    "prerelease": null,
+    "latest": null,
+    "assetCount": 0
+  },
+  "git": {
+    "mainOriginClean": null,
+    "codexBranchesRemaining": null
+  }
+}
