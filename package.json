@@ -5,9 +5,11 @@
   "type": "module",
   "description": "映像素材リンク・サムネイル・Bロール棚 closed alpha",
   "scripts": {
-    "test": "node tests/product.test.mjs",
+    "test": "node tests/product.test.mjs && node tools/platform-runtime-gate.mjs && node tools/closed-alpha-guard.mjs",
     "validate": "node src/cli/index.js --input samples/representative-suite.json --output dist/video-asset-thumbnail-broll-shelf-representative-report.json",
-    "build": "node scripts/build-docs-zip.mjs"
+    "build": "node scripts/build-docs-zip.mjs",
+    "platform:gate": "node tools/platform-runtime-gate.mjs",
+    "closed-alpha:guard": "node tools/closed-alpha-guard.mjs"
   },
   "keywords": [
     "WindowsApp",
