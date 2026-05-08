@@ -1,0 +1,11 @@
+{
+  "product": "video-asset-thumbnail-broll-shelf",
+  "title": "映像素材リンク・サムネイル・Bロール棚",
+  "domain": "WindowsApp",
+  "ideaNo": 18,
+  "platformType": "windows-local-app",
+  "expectedPublicTarget": "GitHub Release / BOOTH",
+  "browser": null,
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}

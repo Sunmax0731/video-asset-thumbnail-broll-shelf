@@ -15,7 +15,7 @@
     }
   },
   "github": {
-    "repo": "https://github.com/Sunmax0731/video-asset-thumbnail-broll-shelf",
+    "repo": "Sunmax0731/video-asset-thumbnail-broll-shelf",
     "releaseUrl": "https://github.com/Sunmax0731/video-asset-thumbnail-broll-shelf/releases/tag/v0.1.0-alpha.1",
     "tagName": "v0.1.0-alpha.1",
     "prerelease": true,
@@ -30,7 +30,8 @@
       "manual-test.md",
       "strict-manual-test-addendum.md",
       "video-asset-thumbnail-broll-shelf-docs.zip"
-    ]
+    ],
+    "url": "https://github.com/Sunmax0731/video-asset-thumbnail-broll-shelf"
   },
   "git": {
     "mainOriginCleanBeforeEvidenceCommit": {
@@ -55,5 +56,21 @@
     "Cost": "S-",
     "Delivery": "S-",
     "Satisfaction": "S-"
+  },
+  "repository": "Sunmax0731/video-asset-thumbnail-broll-shelf",
+  "githubUrl": "https://github.com/Sunmax0731/video-asset-thumbnail-broll-shelf",
+  "releaseUrl": "https://github.com/Sunmax0731/video-asset-thumbnail-broll-shelf/releases/tag/v0.1.0-alpha.1",
+  "prerelease": true,
+  "latest": false,
+  "assetCount": 3,
+  "platformRuntimeGate": "dist/platform-runtime-gate-result.json",
+  "platformType": "windows-local-app",
+  "manualTest": "not-run-by-codex",
+  "qcdsEvaluation": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-",
+    "capReason": "manual-test-not-run-by-codex"
   }
 }
